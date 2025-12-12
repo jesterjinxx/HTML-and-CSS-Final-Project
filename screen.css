@@ -1,0 +1,401 @@
+/* ----------------------------------
+   RESET
+---------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------
+   BODY STYLING
+---------------------------------- */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #e8e8e8;
+    background-image: url('../media/greenbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Mobile background adjustment */
+@media (max-width: 600px) {
+    body {
+        background-image: url('../media/mobilebg.jpg');
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    h1 {
+        text-shadow: 1px 1px 6px #1a1a1a;
+    }
+    nav ul li a {
+        padding: 8px 10px; 
+        font-size: 0.9em; 
+
+    }
+
+    nav {
+        height: auto;  
+        font-size: 1em;
+    }
+}
+
+@font-face {
+    font-family: 'ModernTypewriter';
+    src: url('../media/ModernTypewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    color: white;
+    font-size: 0.9em;
+}
+
+/* ----------------------------------
+   HEADERS
+---------------------------------- */
+h1 {
+    font-family: ModernTypewriter, sans-serif, Arial, Helvetica;
+    font-size: 4em;
+    color: rgba(166, 255, 0, 1);
+    text-align: center;
+    ;
+}
+
+h2 {
+     font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.1);
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.1);
+}
+
+/* ----------------------------------
+   NAVIGATION
+---------------------------------- */
+nav {
+    width: 100%;
+    background-color: rgba(168, 255, 6, 0.4);
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+@media (max-width: 400px){
+img {
+    min-width: 125px;
+    max-width: 150px;
+}
+}
+nav {
+    height: 3.5em;
+    margin-top: 10px;
+}
+nav a {
+    margin: 0 8px;
+    font-size: 14px;
+}
+nav ul li a{
+    display: block;
+    font-size: .8em;
+}
+h1 {
+    font-size: 2.7em;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: no-wrap;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000000;
+    transition: background 0.3s, transform 0.3s;
+    height: 100%;
+}
+
+nav ul li a:hover {
+    background-color: #b9ff16;
+    border-radius: 5px;
+}
+
+/* ----------------------------------
+   MAIN GRID LAYOUT
+---------------------------------- */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+/* ----------------------------------
+   HERO SECTION
+---------------------------------- */
+#hero {
+    justify-self: center;
+    width: fit-content;
+    max-width: 90%;
+    min-width: 20%;
+    padding: 20px 30px;
+    background-color: rgba(10, 10, 10, 0.55);
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(166, 255, 0, 0.5);
+box-shadow: 0 0 12px rgba(166, 255, 0, 0.25);
+}
+
+#hero h2 {
+    animation: fadeIn 1.2s ease-in-out;
+    color: #cfff74;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin: 0;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+/* ----------------------------------
+   ANIMATIONS
+---------------------------------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------------
+   TOOLS GRID
+---------------------------------- */
+#tools {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+#tools article {
+    background-color: rgba(173, 247, 0, 0.2);
+    border-radius: 8px;
+    color: rgb(255, 0, 0);
+    padding: 25px;
+    text-align: center;
+}
+
+#tools article a {
+    background-color: #78ac00;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#tools article a:hover {
+    background-color: #99ca25;
+}
+
+#tools article img {
+    border-radius: 5px;
+    display: block;
+    height: auto;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#tools h2 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 0;
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    text-align: left;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.1);
+}
+
+/* Tools responsive breakpoints */
+@media (max-width: 900px) {
+    #tools {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #tools {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------------------------------
+   RESOURCES SECTION
+---------------------------------- */
+#resources {
+    background-color: rgba(79, 85, 0, 0.6);
+    border-radius: 8px;
+    grid-column: 1/-1;
+    padding: 20px;
+    text-align: center;
+}
+
+#resources a {
+    background-color: #77aa00;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#resources a:hover {
+    background-color: #9cd434;
+}
+
+#resources img {
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+/* ----------------------------------
+   TOOL BLURB
+---------------------------------- */
+.tool-blurb {
+    background-color: rgba(75, 75, 75, 0.2);
+    color: white;
+    font-size: 1.1em;
+    grid-column: 1/-1;
+    margin: 0px 0 25px 0;
+    padding: 15px;
+    text-align: left;
+}
+
+/* ----------------------------------
+   ICON BAR
+---------------------------------- */
+.icon-bar {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.icon-bar a {
+    background-color: #b4b4b4;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    margin: 5px 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.icon-bar a svg {
+    fill: #b9ff16;      
+    width: 28px;         
+    height: 28px;     
+    transition: fill 0.3s, transform 0.3s;
+}
+
+.icon-bar a:hover {
+    background-color: #e2ebd9;
+}
+
+.icon-bar a:hover svg {
+    fill: #000; 
+    transform: scale(1.1); 
+}
+/* ----------------------------------
+   SECTION BACKGROUNDS/PAGE STYLING ELEMENTS */
+.section-bg-grid {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+.section-bg-diagonal {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.03) 15%,
+        rgba(255,255,255,0.01) 25%,
+        rgba(255,255,255,0.01) 50%,
+        rgba(255,255,255,0.03) 50%,
+        rgba(255,255,255,0.03) 75%,
+        rgba(255,255,255,0.01) 15%
+    );
+    background-size: 20px 20px;
+}
+.card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 7px;
+    padding: 24px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* ----------------------------------
+   FOOTER
+---------------------------------- */
+footer {
+    background-color: rgba(22, 22, 22, 0.6);
+    color: white;
+    font-size: 0.9em;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+}

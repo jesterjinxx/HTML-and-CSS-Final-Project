@@ -1,0 +1,50 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    color: black !important;
+    font-size: 12pt !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background: none !important;
+    display: block !important;
+}
+
+
+img,
+picture,
+svg,
+video {
+    display: none !important;
+}
+
+body {
+    background: white !important;
+}
+
+body,
+main,
+section,
+article,
+div {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+a {
+    text-decoration: underline !important;
+    color: black !important;
+}
+
+script {
+    display: none !important;
+}
+
+nav,
+.icon-bar,
+header,
+footer {
+    display: none !important;
+}
