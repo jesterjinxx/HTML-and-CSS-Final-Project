@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="WAB'S WEB DESIGN TOOLS: Fun online design tools to create stylish fonts, backgrounds, and CSS styling resources.">
+    <meta name="keywords" content="web design, design tools, fonts, backgrounds, CSS, styling, online tools">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAB'S WEB DESIGN TOOLS</title>
+    <script src="https://kit.fontawesome.com/3e67760604.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+
+<body>
+    <header>
+        <h1>WAB'S WEB DESIGN TOOLS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+        <img src="media/3dgifmaker39315.gif" alt="3d globe animation"
+            style="display:block; margin:0 auto; max-width:10%; max-height:10%;">
+    </header>
+    <div class="icon-bar">
+        <a href="mailto:bussey5@mail.nmc.edu" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 352L0 128C0 75 43 32 96 32l320 0c53 0 96 43 96 96l0 224c0 53-43 96-96 96l-120 0c-5.2 0-10.2 1.7-14.4 4.8L166.4 539.2c-4.2 3.1-9.2 4.8-14.4 4.8-13.3 0-24-10.7-24-24l0-72-32 0c-53 0-96-43-96-96z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@lisabalbach3348" target="_blank" title="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"/></svg>
+        </a>
+    </div>
+    <main>
+        <section id="hero" class="section-bg-grid">
+            <h2>Your source for fun web design tools
+                Generate stylish fonts, backgrounds, and CSS snippets for your projects.
+            </h2>
+        </section>
+        <section id="tools" class="card">
+            <h2>Featured Tools</h2>
+            <p class="tool-blurb">
+                Explore our hand-picked collection of web design tools to elevate your projects. From creating unique
+                fonts and eye-catching text animations to generating stylish backgrounds and GIFs, these resources make
+                designing easier, faster, and more fun. Whether you’re a beginner or a seasoned web designer, our
+                featured tools provide everything you need to add professional polish to your websites. -Wab
+            </p>
+            <article>
+                <h3>FontSpace</h3>
+                <p>Create unique fonts for your web projects.</p>
+                <a href="https://www.fontspace.com" target="_blank">Visit Font Space</a>
+                <img src="media/fontspace.jpg" alt="fontspace">
+            </article>
+            <article>
+                <h3>3D Gif Maker</h3>
+                <p>Create patterns, textures, and animated gifs from your own image.</p>
+                <a href="https://3dgifmaker.com" target="_blank">Visit 3D Gif Maker</a>
+                <img src="media/3dgifmaker.jpg" alt="3dgifmaker">
+            </article>
+            <article>
+                <h3>Paper Design</h3>
+                <p>Create patterns, textures, and stylish video.</p>
+                <a href="https://app.paper.design" target="_blank">Visit Paper Design</a>
+                <img src="media/paperdesign.jpg" alt="paperdesign">
+            </article>
+            <article>
+                <h3>Space Type Generator</h3>
+                <p>Decorate and format unique text animations</p>
+                <a href="https://spacetypegenerator.com/" target="_blank">Visit Space Type Generator</a>
+                <img src="media/spacetypegen.jpg" alt="spacetypegenerator">
+            </article>
+            <article>
+                <h3>Cool Backgrounds</h3>
+                <p>Quickly create a clean and well formatted background image fit for any webpage</p>
+                <a href="https://coolbackgrounds.io" target="_blank">Visit Cool Backgrounds</a>
+                <img src="media/coolbackgrounds.jpg" alt="coolbackgrounds">
+            </article>
+        </section>
+        <section id="resources" class="card">
+            <h2>W3 Schools</h2>
+            <p>Tutorials, snippets, and tips to improve your design workflow</p>
+            <a href="https://w3schools.com" target="_blank">Visit W3 Schools</a>
+            <img src="media/w3schools.jpg" alt="w3schools">
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 WAB'S WEB DESIGN TOOLS. | Contact: bussey5@mail.nmc.edu</p>
+
+    </footer>
+    <script>
+        window.addEventListener('load', () => {
+            const nav = document.querySelector('nav');
+            nav.style.position = 'relative';
+            nav.style.top = '-100px';
+
+            let pos = -100;
+            let velocity = 5;
+
+            const bounce = setInterval(() => {
+                pos += velocity;
+                if (pos >= 0) {
+                    pos = 0;
+                    clearInterval(bounce);
+                }
+                nav.style.top = pos + 'px';
+            }, 15);
+        });
+    </script>
+</body>
+
+</html>
